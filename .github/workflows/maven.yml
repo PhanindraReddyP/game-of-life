@@ -5,7 +5,7 @@ on: [push]
 jobs:
   build:
 
-    runs-on: [azureSHVM]
+    runs-on: ubuntu:latest
 
     steps:
     - uses: actions/labeler@v2
@@ -27,7 +27,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |  
-        echo "<settings><servers><server><id>github</id><username>OWNER</username><password>${GITHUB_TOKEN}</password></server></servers></settings>" > ~/.m2/settings.xml
+#        echo "<settings><servers><server><id>github</id><username>OWNER</username><password>${GITHUB_TOKEN}</password></server></servers></settings>" > ~/.m2/settings.xml
         mvn -f pom.xml package -DskipTests
         echo $GITHUB_WORKSPACE
         ls gameoflife-web/target
