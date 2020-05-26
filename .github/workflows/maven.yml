@@ -27,10 +27,9 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |  
-#        echo "<settings><servers><server><id>github</id><username>OWNER</username><password>${GITHUB_TOKEN}</password></server></servers></settings>" > ~/.m2/settings.xml
         mvn -f pom.xml package -DskipTests
-        echo $GITHUB_WORKSPACE
-        ls gameoflife-web/target
+#        echo "<settings><servers><server><id>github</id><username>OWNER</username><password>${GITHUB_TOKEN}</password></server></servers></settings>" > ~/.m2/settings.xml
+
 #     - name: Run some echo's
 #       run: |
 #         echo "*******************"
