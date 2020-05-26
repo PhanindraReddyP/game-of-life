@@ -63,7 +63,7 @@
 <body>
     <marquee><h1 style="background-color:orange;">Welcome to Conway's Game Of Life!</h1></marquee>
 
-<div class="intro">
+<div class="intro" style="background-color:tomato;">
     <p>This is a really cool web version of Conway's famous Game Of
         Life. The Game of Life is a cellular automaton devised by the British
         mathematician John Horton Conway way back in 1970.</p>
