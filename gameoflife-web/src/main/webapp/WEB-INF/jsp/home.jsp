@@ -61,7 +61,7 @@
     </style>
 </head>
 <body>
-<h2>Welcome to Conway's Game Of Life!</h2>
+    <marquee><h1 style="background-color:orange;">Welcome to Conway's Game Of Life!</h1></marquee>
 
 <div class="intro">
     <p>This is a really cool web version of Conway's famous Game Of
