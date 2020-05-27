@@ -1,6 +1,15 @@
 name: Maven Build
 
-on: [push]
+on:
+  schedule:
+     - cron:  '*/15 * * * *' 
+  push:
+     branches:
+     - master
+     - playground
+  pull_request:
+      branches:
+        - master
 
 jobs:
   build:
