@@ -60,7 +60,7 @@ jobs:
       uses: Azure/webapps-deploy@v2
       with:
           # Name of the Azure Web App
-          app-name: ghpetclinic
+          app-name: testpc
           # Applies to Web App only: Publish profile (*.publishsettings) file contents with Web Deploy secrets
           publish-profile: ${{ secrets.PUBLISH_PROFILE }}
   #         # Enter an existing Slot other than the Production slot
