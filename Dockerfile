@@ -1,2 +1,2 @@
-FROM docker.pkg.github.com/phanindrareddyp/newrepo/tom:latest
+FROM tomcat:8.0
 cmd ["catalina.sh", "run"]
