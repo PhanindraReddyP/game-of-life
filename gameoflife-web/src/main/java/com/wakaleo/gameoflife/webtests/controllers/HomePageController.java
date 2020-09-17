@@ -23,4 +23,8 @@ public class HomePageController {
     public ModelAndView home() {
         return new ModelAndView("home");
     }
+	
+	public void setValues(String[] somevalues) {
+	this.values = somevalues;
+	}
 }
